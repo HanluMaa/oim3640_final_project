@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='index.css')}}" >
+</head>
+<body>
+    <div>
+        <h1>Email Verification</h1>
+        <hr>
+        <p>As we are receiving more information on a daily basis, we may struggle to verify its accuracy. Therefore, here we are! We are using this website to assist you identify the validity of the unknown emails!</p>
+        <p>Type in your email and click submit button. You will see the validity of the email within seconds!</p>
+        <br>
+        <form action="/datas", method="post">
+            <input type="text" placeholder="Please enter the email address you want to test..." name="email"><br><br><br>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
