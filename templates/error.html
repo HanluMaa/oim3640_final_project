@@ -4,33 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error</title>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='error.css')}}" >
+
 </head>
-<style>
-    body {background-color: gray;}
-    h1 {text-align: center;
-        font-family: Arial, Helvetica, sans-serif;}
-    p {font-size: 1.3em;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;}
-    div {margin-left: 15%;
-        margin-right: 15%;
-        margin-top: 5%;}
-    hr {border: 2px dashed rgb(217, 217, 217);}
-    form {text-align: center;}
-    input {height: 40px;
-        width: 400px;
-        font-size: medium;}
-    button {height: 35px;
-        width: 100px;
-        font-size: large;
-        font-weight: bold;}
-    h2 {text-align: center;
-        }
-</style>
 <body>
     <div>
         <h1>ERROR!!!</h1>
         <hr>
+        <p>Your Email {{email}} is not in a correct format!</p>
+        <br>
         <p>Try again! Please enter a valid email!</p>
         <form action="/datas", method="post">
             <input type="text" placeholder="email" name="email"><br><br>s
